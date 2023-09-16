@@ -3,13 +3,16 @@
 <script src = " https://aframe.io/releases/0.9.2/aframe.min.js "> </script>
 <script src = " https://raw.githack.com/jeromeetienne/AR.js /2.0.5/aframe/build/aframe-ar.js "> </script>
 <body style = 'margin: 0; overflow: scroll; '>
-    <a-scene embedded arjs =' patternRatio: 0.9 '>
-    <a-marker type ='pattern' url ='pattern-S_logo.patt'>
-        <a-box scale="0.5 0.5 0.5" position =' 0 0.5 0 'material =' opacity: 1; '></a-box>
-<!--        <video src="REF.mp4"></video>-->
-<!--        <video src="REF.mp4" preload="auto"></video>-->
-    </a-marker>
-    <a-entity camera> </a-entity>
+<a-scene embedded arjs =' patternRatio: 0.9 '>
+  <a-marker type ='pattern' url ='pattern-S_logo.patt'>
+<!--  <a-marker type ='pattern' url ='pattern-GH.patt'>-->
+    <a-box scale="0.5 0.5 0.5" position =' 0 0.5 0 'material =' opacity: 1; '></a-box>
+  </a-marker>
+  <a-marker type ='pattern' url ='pattern-GH.patt'>
+    <a-sphere position="0 0.5 0" radius="0.5" color="#EF2D5E"></a-sphere>
+<!--    <a-box scale="0.5 0.5 0.5" position =' 0 0.5 0 'material =' opacity: 1; '></a-box>-->
+  </a-marker>
+  <a-entity camera> </a-entity>
 </a-scene>
 </body>
 
