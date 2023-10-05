@@ -5,13 +5,15 @@
 <body style = 'margin: 0; overflow: scroll; '>
 <a-scene embedded arjs =' patternRatio: 0.9 '>
   <a-marker type ='pattern' url ='pattern-S_logo.patt'>
-<!--     <a-box scale="0.5 0.5 0.5" position =' 0 0.5 0 'material =' opacity: 1; '></a-box> -->
     <a-video id="K" src="K.mp4" position="0 0 0" rotation="-90 0 0" width="" height=""></a-video>
+<!--<a-box scale="0.5 0.5 0.5" position =' 0 0.5 0 'material =' opacity: .8; '></a-box> -->
   </a-marker>
+  
   <a-marker type ='pattern' url ='pattern-GH.patt'>
-    <a-sphere position="0 0.5 0" radius="0.5" color="#EF2D5E"></a-sphere>
-<!--    <a-box scale="0.5 0.5 0.5" position =' 0 0.5 0 'material =' opacity: 1; '></a-box>-->
+    <a-box scale="0.5 0.5 0.5" position =' 0 0.5 0 'material =' opacity: 1; '></a-box>
+<!--     <a-sphere position="0 0.5 0" radius="0.5" color="#EF2D5E"></a-sphere> -->
   </a-marker>
+  
   <a-entity camera> </a-entity>
 </a-scene>
 </body>
